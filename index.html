@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Hubert Diego — Flutter Developer & IoT Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,700;0,900;1,700;1,900&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="pbar"></div>
+<div class="cur" id="cur"></div>
+<div class="cur-r" id="curR"></div>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb">
+  <button class="lb-close" id="lbClose">✕</button>
+  <img id="lbImg" src="" alt="Certificate" />
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">Hubert<span class="accent">.</span>Diego</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="th-btn" id="thBtn">🌙</button>
+      <a href="https://www.onlinejobs.ph/jobseekers/info/2562826" target="_blank" class="btn-hire">🚀 Hire Me Now</a>
+      <div class="ham" id="ham"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE DRAWER -->
+<div class="drawer" id="drawer">
+  <button class="d-close" id="dClose">✕</button>
+  <a href="#about" class="dl">About</a>
+  <a href="#services" class="dl">Services</a>
+  <a href="#skills" class="dl">Skills</a>
+  <a href="#projects" class="dl">Projects</a>
+  <a href="#certificates" class="dl">Certificates</a>
+  <a href="#experience" class="dl">Experience</a>
+  <a href="#contact" class="dl">Contact</a>
+  <a href="https://www.onlinejobs.ph/jobseekers/info/2562826" target="_blank" class="dl" style="color:var(--accent);">🚀 Hire Me</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid">
+    <div class="hero-left">
+      <div class="hero-badge">🟢 Available for Opportunities</div>
+      <h1>Hubert<span class="l2">Diego.</span></h1>
+      <p class="hero-mono"><span>// </span>Flutter Dev · IoT Engineer · Full-Stack Builder</p>
+      <p class="hero-desc">IT Graduate from CPSU building full-stack solutions that bridge <strong>hardware and software</strong> — from ESP32 microcontrollers to cross-platform mobile apps and beyond.</p>
+      <div class="hero-actions">
+        <a href="https://www.onlinejobs.ph/jobseekers/info/2562826" target="_blank" class="btn-hire-big">🚀 Hire Me on OnlineJobs.ph</a>
+        <a href="#projects" class="btn-p">View My Work →</a>
+        <a href="mailto:Hubertdiego688@gmail.com" class="btn-a">✉ Email Me</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="p-wrap">
+        <div class="float-a"><div class="fb-n">5+</div><div class="fb-l">Projects</div></div>
+        <div class="p-card">
+          <div class="p-img">
+            <img src="images/hero-photo.jpg" alt="Hubert Diego graduation photo" />
+            <div class="p-loc">
+              <div class="p-loc-dot"></div>
+              <div>
+                <div class="p-loc-t">Negros Occidental, PH</div>
+                <div class="p-loc-s">Remote &amp; on-site available</div>
+              </div>
+            </div>
+          </div>
+          <div class="p-info">
+            <div class="p-name">Hubert Diego</div>
+            <div class="p-role">BSIT Graduate · Flutter &amp; IoT Developer</div>
+            <div class="p-chips">
+              <span class="chip b">Flutter</span>
+              <span class="chip g">ESP32</span>
+              <span class="chip r">IoT</span>
+              <span class="chip">React.js</span>
+              <span class="chip">Arduino</span>
+            </div>
+          </div>
+        </div>
+        <div class="float-b"><div class="fb-n">2026</div><div class="fb-l">Graduate</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="s-item reveal"><div class="s-num" data-count="5">0<span>+</span></div><div class="s-lbl">Key Projects</div></div>
+    <div class="s-item reveal"><div class="s-num" data-count="10">0<span>+</span></div><div class="s-lbl">Technologies</div></div>
+    <div class="s-item reveal"><div class="s-num" data-count="3">0<span>+</span></div><div class="s-lbl">Years Building</div></div>
+    <div class="s-item reveal"><div class="s-num" data-count="2">0<span>x</span></div><div class="s-lbl">Platforms (Mobile+Web)</div></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="a-img-col reveal">
+        <div class="a-img">
+          <img src="images/about-photo.jpg" alt="Hubert Diego formal graduation portrait" />
+        </div>
+        <div class="a-float">
+          <div class="af-row"><div class="af-ic">📱</div><div><div class="af-v">Flutter Dev</div><div class="af-k">Cross-platform</div></div></div>
+          <div class="af-row"><div class="af-ic">⚙️</div><div><div class="af-v">IoT Engineer</div><div class="af-k">ESP32 / Arduino</div></div></div>
+          <div class="af-row"><div class="af-ic">🌐</div><div><div class="af-v">Web Builder</div><div class="af-k">React · PHP</div></div></div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="eyebrow">About Me</div>
+        <div class="s-title" style="margin-bottom:24px;">Who I <em>Am</em></div>
+        <div class="about-text">
+          <p>I'm a <strong>detail-oriented BSIT graduate</strong> from Central Philippines State University — Hinoba-an Campus, with a passion for building practical systems that solve real-world problems.</p>
+          <p>My work sits at the intersection of <strong>mobile development, IoT, and embedded systems</strong>. I've built systems where Flutter apps talk to ESP32 microcontrollers in real-time over WebSocket and Bluetooth — from aquaculture robots to solar pump monitors.</p>
+          <p>I love engineering at the seam between <strong>hardware and software</strong>, and I'm eager to bring this cross-disciplinary mindset to a team that values creative problem-solving and innovation.</p>
+        </div>
+        <div class="info-grid">
+          <div class="ic"><div class="ik">Location</div><div class="iv">Hinoba-an, Negros Occidental</div></div>
+          <div class="ic"><div class="ik">Phone</div><div class="iv"><a href="tel:+639059364826">+63 905 936 4826</a></div></div>
+          <div class="ic"><div class="ik">Email</div><div class="iv"><a href="mailto:Hubertdiego688@gmail.com">Hubertdiego688@gmail.com</a></div></div>
+          <div class="ic"><div class="ik">Status</div><div class="iv avail">● Open to Work</div></div>
+          <div class="ic"><div class="ik">Degree</div><div class="iv">BSIT — CPSU 2026</div></div>
+          <div class="ic"><div class="ik">Work Type</div><div class="iv">Full-time · Freelance · Remote</div></div>
+        </div>
+        <div style="margin-top:30px;display:flex;gap:12px;flex-wrap:wrap;">
+          <a href="https://www.onlinejobs.ph/jobseekers/info/2562826" target="_blank" class="btn-hire-big">🚀 Hire Me Now</a>
+          <a href="mailto:Hubertdiego688@gmail.com" class="btn-o">✉ Email Me</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="eyebrow reveal">What I Offer</div>
+    <div class="s-title reveal">My <em>Services</em></div>
+    <div class="srv-grid">
+      <div class="srv-card reveal"><div class="srv-ico">📱</div><div class="srv-title">Mobile App Development</div><div class="srv-desc">Cross-platform mobile apps built with Flutter — delivered for both Android and iOS from a single codebase. Clean UI, smooth animations, real-time data, and push notifications.</div><div class="srv-tags"><span class="srv-tag">Flutter</span><span class="srv-tag">Dart</span><span class="srv-tag">Android</span><span class="srv-tag">iOS</span><span class="srv-tag">Firebase</span></div></div>
+      <div class="srv-card reveal"><div class="srv-ico">⚙️</div><div class="srv-title">IoT System Development</div><div class="srv-desc">End-to-end IoT solutions — from ESP32/Arduino firmware to companion mobile apps. Real-time sensor monitoring, motor control, Bluetooth & WebSocket communication.</div><div class="srv-tags"><span class="srv-tag">ESP32</span><span class="srv-tag">Arduino</span><span class="srv-tag">C/C++</span><span class="srv-tag">WebSocket</span><span class="srv-tag">Bluetooth</span></div></div>
+      <div class="srv-card reveal"><div class="srv-ico">🌐</div><div class="srv-title">Web Development</div><div class="srv-desc">Responsive, modern web applications using React.js on the frontend and PHP/MySQL on the backend. From landing pages to full-stack management systems.</div><div class="srv-tags"><span class="srv-tag">React.js</span><span class="srv-tag">PHP</span><span class="srv-tag">MySQL</span><span class="srv-tag">HTML/CSS</span><span class="srv-tag">JavaScript</span></div></div>
+      <div class="srv-card reveal"><div class="srv-ico">🔌</div><div class="srv-title">Hardware-Software Integration</div><div class="srv-desc">Bridging the gap between physical hardware and digital software. Specializing in systems where mobile apps and microcontrollers work seamlessly together in real-time.</div><div class="srv-tags"><span class="srv-tag">Bluetooth</span><span class="srv-tag">HTTP API</span><span class="srv-tag">Sensors</span><span class="srv-tag">Actuators</span></div></div>
+      <div class="srv-card reveal"><div class="srv-ico">🗄️</div><div class="srv-title">Database & Backend Systems</div><div class="srv-desc">Robust backend solutions — CRUD systems, authentication, role-based access, relational database schemas, and reporting with PDF export capabilities.</div><div class="srv-tags"><span class="srv-tag">MySQL</span><span class="srv-tag">PHP</span><span class="srv-tag">REST API</span><span class="srv-tag">Auth</span><span class="srv-tag">Reports</span></div></div>
+      <div class="srv-card reveal"><div class="srv-ico">🤖</div><div class="srv-title">AI-Integrated Applications</div><div class="srv-desc">Integrating modern AI APIs into web and mobile apps. From AI-powered fact-checkers to smart assistants — bringing intelligence into your product.</div><div class="srv-tags"><span class="srv-tag">OpenAI API</span><span class="srv-tag">GPT-4o</span><span class="srv-tag">REST API</span><span class="srv-tag">JavaScript</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <div class="eyebrow reveal">Technical Stack</div>
+    <div class="s-title reveal">What I <em>Build With</em></div>
+    <div class="skill-tabs reveal">
+      <button class="st active" data-cat="all">All</button>
+      <button class="st" data-cat="mobile">Mobile</button>
+      <button class="st" data-cat="web">Web</button>
+      <button class="st" data-cat="iot">IoT</button>
+      <button class="st" data-cat="tools">Tools</button>
+    </div>
+    <div class="sk-grid" id="skGrid">
+      <div class="sk-card reveal" data-c="mobile"><div class="sk-top"><div class="sk-ico">📱</div><div><div class="sk-nm">Flutter / Dart</div><div class="sk-lv">Primary Platform</div></div></div><div class="sk-bar"><div class="sk-fill" data-w="88"></div></div><div class="sk-tags"><span class="stg">Cross-platform</span><span class="stg">Animations</span><span class="stg">State Mgmt</span><span class="stg">Push Notifs</span></div></div>
+      <div class="sk-card reveal" data-c="iot"><div class="sk-top"><div class="sk-ico">⚙️</div><div><div class="sk-nm">ESP32 / Arduino</div><div class="sk-lv">Embedded Systems</div></div></div><div class="sk-bar"><div class="sk-fill" data-w="82"></div></div><div class="sk-tags"><span class="stg">C/C++</span><span class="stg">WiFi</span><span class="stg">Sensors</span><span class="stg">Servos</span></div></div>
+      <div class="sk-card reveal" data-c="web"><div class="sk-top"><div class="sk-ico">⚛️</div><div><div class="sk-nm">React.js</div><div class="sk-lv">Frontend Framework</div></div></div><div class="sk-bar"><div class="sk-fill" data-w="75"></div></div><div class="sk-tags"><span class="stg">Hooks</span><span class="stg">Routing</span><span class="stg">REST API</span><span class="stg">Components</span></div></div>
+      <div class="sk-card reveal" data-c="mobile iot"><div class="sk-top"><div class="sk-ico">📡</div><div><div class="sk-nm">Bluetooth &amp; WebSocket</div><div class="sk-lv">Real-time Comms</div></div></div><div class="sk-bar"><div class="sk-fill" data-w="85"></div></div><div class="sk-tags"><span class="stg">BLE</span><span class="stg">Classic BT</span><span class="stg">WebSocket</span><span class="stg">HTTP</span></div></div>
+      <div class="sk-card reveal" data-c="web"><div class="sk-top"><div class="sk-ico">🌐</div><div><div class="sk-nm">HTML5 / CSS3 / JS</div><div class="sk-lv">Web Fundamentals</div></div></div><div class="sk-bar"><div class="sk-fill" data-w="80"></div></div><div class="sk-tags"><span class="stg">ES6+</span><span class="stg">Responsive</span><span class="stg">Animations</span></div></div>
+      <div class="sk-card reveal" data-c="web"><div class="sk-top"><div class="sk-ico">🗄️</div><div><div class="sk-nm">PHP &amp; MySQL</div><div class="sk-lv">Backend &amp; Database</div></div></div><div class="sk-bar"><div class="sk-fill" data-w="72"></div></div><div class="sk-tags"><span class="stg">CRUD</span><span class="stg">Auth</span><span class="stg">SQL</span><span class="stg">Schema</span></div></div>
+      <div class="sk-card reveal" data-c="tools"><div class="sk-top"><div class="sk-ico">🛠️</div><div><div class="sk-nm">Git &amp; GitHub</div><div class="sk-lv">Version Control</div></div></div><div class="sk-bar"><div class="sk-fill" data-w="78"></div></div><div class="sk-tags"><span class="stg">Branching</span><span class="stg">PRs</span><span class="stg">Collab</span></div></div>
+      <div class="sk-card reveal" data-c="tools mobile"><div class="sk-top"><div class="sk-ico">🏗️</div><div><div class="sk-nm">Build Systems</div><div class="sk-lv">Android &amp; Gradle</div></div></div><div class="sk-bar"><div class="sk-fill" data-w="70"></div></div><div class="sk-tags"><span class="stg">AGP 8.6</span><span class="stg">Gradle 8.9</span><span class="stg">Kotlin</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="eyebrow reveal">Portfolio</div>
+    <div class="s-title reveal">Things I've <em>Built</em></div>
+    <div class="pf-wrap reveal">
+      <button class="pf active" data-f="all">All</button>
+      <button class="pf" data-f="iot">IoT</button>
+      <button class="pf" data-f="mobile">Mobile</button>
+      <button class="pf" data-f="web">Web</button>
+      <button class="pf" data-f="backend">Backend</button>
+    </div>
+    <div class="proj-grid">
+      <!-- ASFAH with real dual image -->
+      <div class="pc reveal" data-t="iot mobile">
+        <div class="pc-img-dual">
+          <div class="di-l">
+            <img src="images/asfah-hardware.png" alt="ASFAH hardware robot" />
+            <span class="di-label">Hardware</span>
+          </div>
+          <div class="di-r">
+            <img src="images/asfah-app.png" alt="ASFAH mobile app" />
+            <span class="di-label">App</span>
+          </div>
+          <div class="pc-num" style="color:rgba(255,255,255,.4);">01</div>
+          <span class="pc-badge cap">Capstone</span>
+        </div>
+        <div class="pc-body"><div class="pc-yr">2024–2025</div><h3>ASFAH</h3><div class="pc-sub">Automated Segregation, Feeding &amp; Harvesting</div><p>Full-featured Flutter app controlling an ESP32-based smart aquaculture robot for tilapia farming. Real-time motor control, virtual joystick, animated feed history, mortality tracker, QR share &amp; push notifications via WebSocket/HTTP.</p></div>
+        <div class="pc-foot"><span class="ptg">Flutter</span><span class="ptg">ESP32</span><span class="ptg">WebSocket</span><span class="ptg">PCA9685</span><span class="ptg">Dart</span></div>
+      </div>
+      <!-- SBWPS with real dual image -->
+      <div class="pc reveal" data-t="iot mobile">
+        <div class="pc-img-dual">
+          <div class="di-l">
+            <img src="images/sbwps-hardware.png" alt="SBWPS solar hardware" />
+            <span class="di-label">Hardware</span>
+          </div>
+          <div class="di-r">
+            <img src="images/sbwps-app.png" alt="SBWPS mobile app" />
+            <span class="di-label">App</span>
+          </div>
+          <div class="pc-num" style="color:rgba(255,255,255,.4);">02</div>
+          <span class="pc-badge iot">IoT</span>
+        </div>
+        <div class="pc-body"><div class="pc-yr">2024–2025</div><h3>SBWPS</h3><div class="pc-sub">Solar-Powered Water Pump Monitor</div><p>Flutter Android app monitoring &amp; controlling an Arduino solar pump via Bluetooth HC-05. Real-time water level, battery %, servo angle &amp; pump status. Deep Bluetooth compatibility fixed via PowerShell automation scripts.</p></div>
+        <div class="pc-foot"><span class="ptg">Flutter</span><span class="ptg">Arduino</span><span class="ptg">HC-05</span><span class="ptg">MG996R</span><span class="ptg">Sensors</span></div>
+      </div>
+      <div class="pc reveal" data-t="web"><div class="pc-img c3"><span>🔍</span><div class="pc-num">03</div><span class="pc-badge per">Personal</span></div><div class="pc-body"><div class="pc-yr">2024</div><h3>Veritas</h3><div class="pc-sub">AI-Powered Fact-Checker Web App</div><p>Single-file HTML/CSS/JS fact-checking app with authentication, dashboard, history &amp; profile pages. Integrated OpenAI GPT-4o API for AI-powered fact verification — clean, self-contained SPA.</p></div><div class="pc-foot"><span class="ptg">HTML5</span><span class="ptg">CSS3</span><span class="ptg">JavaScript</span><span class="ptg">OpenAI API</span></div></div>
+      <div class="pc reveal" data-t="backend web"><div class="pc-img c4"><span>🎓</span><div class="pc-num">04</div><span class="pc-badge aca">Academic</span></div><div class="pc-body"><div class="pc-yr">2023</div><h3>Student Information System</h3><div class="pc-sub">Full-Stack Academic Records Platform</div><p>PHP &amp; MySQL web app for student records, enrollment &amp; grades. CRUD operations, session auth, form validation, and role-based access for admin and student users.</p></div><div class="pc-foot"><span class="ptg">PHP</span><span class="ptg">MySQL</span><span class="ptg">Bootstrap</span><span class="ptg">JavaScript</span></div></div>
+      <div class="pc reveal" data-t="backend web"><div class="pc-img c5"><span>📦</span><div class="pc-num">05</div><span class="pc-badge aca">Academic</span></div><div class="pc-body"><div class="pc-yr">2023</div><h3>Inventory Management System</h3><div class="pc-sub">Stock &amp; Transaction Tracking</div><p>Native PHP app tracking product inventory, stock, purchases &amp; sales. Relational MySQL schema with search, filter &amp; reporting. Printable PDF reports and server-side low-stock alerts.</p></div><div class="pc-foot"><span class="ptg">PHP</span><span class="ptg">MySQL</span><span class="ptg">JavaScript</span><span class="ptg">PDF Reports</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <div class="eyebrow reveal">Experience</div>
+    <div class="s-title reveal">Where I've <em>Worked</em></div>
+    <div class="timeline">
+      <div class="tl reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-head">
+          <div><div class="tl-t">Data Encoder</div><div class="tl-org">On-the-Job Training / Internship</div></div>
+          <div class="tl-per">5 Months</div>
+        </div>
+        <span class="tl-badge">OJT / Internship</span>
+        <ul class="tl-ul">
+          <li>Performed accurate and efficient data entry and management across multiple systems</li>
+          <li>Conducted data analysis and generated detailed reports using Microsoft Office (Excel, Word, Access)</li>
+          <li>Maintained organized digital records and ensured end-to-end data integrity</li>
+          <li>Coordinated with team members to meet data processing deadlines and quality standards</li>
+        </ul>
+      </div>
+      <div class="tl reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-head">
+          <div><div class="tl-t">Capstone Project Lead</div><div class="tl-org">Central Philippines State University</div></div>
+          <div class="tl-per">2024–2025</div>
+        </div>
+        <span class="tl-badge">Academic Project</span>
+        <ul class="tl-ul">
+          <li>Led full-cycle development of ASFAH — an IoT-based aquaculture automation system</li>
+          <li>Architected the Flutter mobile app, ESP32 firmware, and real-time WebSocket communication layer</li>
+          <li>Managed project documentation, testing, and final defense presentation</li>
+          <li>Collaborated with advisers and stakeholders to align technical implementation with research goals</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="wrap">
+    <div class="eyebrow reveal">Education</div>
+    <div class="s-title reveal">Where I <em>Learned</em></div>
+    <div class="edu-grid">
+      <div class="ec reveal"><div class="ec-ico">🎓</div><div class="ec-deg">Bachelor of Science in Information Technology</div><div class="ec-sch">Central Philippines State University (CPSU) — Hinoba-an</div><div class="ec-yr">2022 – 2026</div><div class="ec-note">Capstone: ASFAH — Automated Segregation, Feeding &amp; Harvesting System using Flutter + ESP32</div></div>
+      <div class="ec reveal"><div class="ec-ico">🏫</div><div class="ec-deg">Senior High School</div><div class="ec-sch">Baguio City National High School</div><div class="ec-yr">Senior High School Level</div></div>
+      <div class="ec reveal"><div class="ec-ico">📚</div><div class="ec-deg">Junior High School</div><div class="ec-sch">Saint Louis High School Philex</div><div class="ec-yr">Junior High School Level</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+  <div class="wrap">
+    <div class="eyebrow reveal">Credentials</div>
+    <div class="s-title reveal">My <em>Certificates</em></div>
+    <div class="cert-grid">
+      <div class="cert-card reveal">
+        <div class="cert-img" onclick="openLb(this)">
+          <img src="images/cert-lan.png" alt="Certificate of Participation — LAN Network in Packet Tracer" />
+        </div>
+        <div class="cert-body">
+          <div class="cert-ico">🏅</div>
+          <div>
+            <div class="cert-title">Certificate of Participation</div>
+            <div class="cert-org">Ethel Programming Computer Programming Services (EPCPS) / DTI</div>
+            <div class="cert-meta">Setting Up a Simple LAN Network in Packet Tracer · December 6, 2025 · via Google Meet</div>
+          </div>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-img" onclick="openLb(this)">
+          <img src="images/cert-webdev.png" alt="Certificate of Appreciation — Web Development Basics" />
+        </div>
+        <div class="cert-body">
+          <div class="cert-ico">🏆</div>
+          <div>
+            <div class="cert-title">Certificate of Appreciation</div>
+            <div class="cert-org">EPCPS — Ethel Programming Computer Programming Services</div>
+            <div class="cert-meta">Web Development Basics: HTML, CSS, and JavaScript · October 17, 2025 · via Google Meet</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="wrap">
+    <div class="eyebrow reveal">Testimonials</div>
+    <div class="s-title reveal">What People <em>Say</em></div>
+    <div class="testi-grid">
+      <div class="testi-card reveal"><span class="testi-quote">"</span><div class="testi-stars">★★★★★</div><div class="testi-text">Hubert demonstrated exceptional technical skill in both hardware and software integration during our capstone project. His ability to connect Flutter apps with ESP32 microcontrollers in real-time was truly impressive.</div><div class="testi-author"><div class="testi-av c1">P</div><div><div class="testi-name">Project Adviser</div><div class="testi-role">CPSU — Hinoba-an Campus</div></div></div></div>
+      <div class="testi-card reveal"><span class="testi-quote">"</span><div class="testi-stars">★★★★★</div><div class="testi-text">A dedicated and resourceful developer who goes the extra mile. He debugged Bluetooth compatibility issues across multiple Android versions — something most developers would give up on.</div><div class="testi-author"><div class="testi-av c2">C</div><div><div class="testi-name">Classmate & Collaborator</div><div class="testi-role">BSIT — CPSU</div></div></div></div>
+      <div class="testi-card reveal"><span class="testi-quote">"</span><div class="testi-stars">★★★★★</div><div class="testi-text">Hubert's attention to detail and clean code made collaboration a breeze. His full-stack mindset — from database design to mobile UI — is rare to find in a fresh graduate.</div><div class="testi-author"><div class="testi-av c3">T</div><div><div class="testi-name">Team Member</div><div class="testi-role">Capstone Project Group</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- HIRE CTA BAND -->
+<div class="hire-band">
+  <div class="hb-inner">
+    <div class="hb-badge">🟢 Currently Available for Work</div>
+    <h2>Ready to Build Something <em>Great</em>?</h2>
+    <p>Whether you need a Flutter app, an IoT system, or a full-stack web solution — I'm ready to deliver. Let's connect and bring your project to life.</p>
+    <div class="hb-btns">
+      <a href="https://www.onlinejobs.ph/jobseekers/info/2562826" target="_blank" class="btn-hb-main">🚀 Hire Me on OnlineJobs.ph</a>
+      <a href="mailto:Hubertdiego688@gmail.com" class="btn-hb-sec">✉ Send an Email</a>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="cont-grid">
+      <div class="reveal">
+        <div class="eyebrow">Get In Touch</div>
+        <h2 class="cont-left">Let's Build Something <em>Together</em></h2>
+        <p class="cont-left">I'm actively looking for opportunities in Flutter, IoT, and full-stack development. Whether it's a full-time role, freelance project, or collaboration — I'd love to hear from you.</p>
+        <div class="c-links">
+          <a href="mailto:Hubertdiego688@gmail.com" class="clink"><div class="clink-ic bl">✉️</div><div><div class="cl-lbl">Email</div><div class="cl-val">Hubertdiego688@gmail.com</div></div></a>
+          <a href="tel:+639059364826" class="clink"><div class="clink-ic gr">📞</div><div><div class="cl-lbl">Phone</div><div class="cl-val">+63 905 936 4826</div></div></a>
+          <div class="clink" style="cursor:default;"><div class="clink-ic or">📍</div><div><div class="cl-lbl">Location</div><div class="cl-val">Bacuyangan, Hinoba-an, Negros Occidental</div></div></div>
+          <a href="https://www.onlinejobs.ph/jobseekers/info/2562826" target="_blank" class="clink"><div class="clink-ic pu">💼</div><div><div class="cl-lbl">Hire Me</div><div class="cl-val">OnlineJobs.ph Profile</div></div></a>
+        </div>
+        <div class="avail-box"><div class="av-dot"></div><div class="av-t"><strong>Currently Available for Work</strong><span>Open to remote, hybrid, or on-site roles — Philippines &amp; worldwide</span></div></div>
+      </div>
+      <div class="reveal">
+        <form class="cf" id="cForm">
+          <div class="fr">
+            <div class="fg"><label>First Name</label><input type="text" id="f_fname" placeholder="John" required/></div>
+            <div class="fg"><label>Last Name</label><input type="text" id="f_lname" placeholder="Doe" required/></div>
+          </div>
+          <div class="fg"><label>Your Email</label><input type="email" id="f_email" placeholder="john@example.com" required/></div>
+          <div class="fg"><label>Subject</label><select id="f_subject"><option>Job Opportunity</option><option>Freelance Project</option><option>Collaboration</option><option>General Inquiry</option></select></div>
+          <div class="fg"><label>Message</label><textarea id="f_message" placeholder="Tell me about your project or opportunity..."></textarea></div>
+          <button type="submit" class="f-sub" id="fBtn"><span id="fTxt">Send Message</span><span id="fIco">→</span></button>
+          <p class="f-note">🔒 Your message goes directly to <strong>Hubertdiego688@gmail.com</strong></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-inner">
+    <div class="ft-top">
+      <div class="ft-brand"><div class="fn">Hubert Diego<span>.</span></div><p>BSIT Graduate · Flutter Developer · IoT Engineer based in Negros Occidental, Philippines. Open to remote and on-site opportunities worldwide.</p></div>
+      <div class="ft-nav"><h4>Navigate</h4><ul><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#certificates">Certificates</a></li><li><a href="#contact">Contact</a></li></ul></div>
+      <div class="ft-nav"><h4>Contact</h4><ul><li><a href="mailto:Hubertdiego688@gmail.com">Hubertdiego688@gmail.com</a></li><li><a href="tel:+639059364826">+63 905 936 4826</a></li><li><a href="https://www.onlinejobs.ph/jobseekers/info/2562826" target="_blank">OnlineJobs.ph Profile</a></li><li style="color:rgba(255,255,255,.45);font-size:13px;">Hinoba-an, Negros Occidental</li></ul></div>
+    </div>
+    <div class="ft-bot">
+      <p>© 2026 Hubert Diego. All rights reserved. Built with 💙</p>
+      <div class="ft-soc"><a href="mailto:Hubertdiego688@gmail.com" class="fs" title="Email">✉</a><a href="tel:+639059364826" class="fs" title="Call">📞</a><a href="https://www.onlinejobs.ph/jobseekers/info/2562826" target="_blank" class="fs" title="Hire">💼</a></div>
+    </div>
+  </div>
+</footer>
+
+<button id="btop" title="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
